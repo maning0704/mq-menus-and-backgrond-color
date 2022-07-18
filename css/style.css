@@ -1,0 +1,67 @@
+@import url(sanitize.css);
+
+
+body {
+    background-color: tan;
+
+}
+
+@media screen and (max-width: 992px) {
+
+    /*　画面サイズが992px以下の場合、ここを読み込む　*/
+    body {
+        background-color: blue;
+    }
+}
+
+@media screen and (max-width: 600px) {
+
+    /*　画面サイズが600px以下の場合、ここを読み込む　*/
+    body {
+        background-color: olive;
+    }
+}
+
+h2 {
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+p {
+    margin-left: 30px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+/* Style the top navigation bar */
+.topnav{
+    overflow: hidden;
+    background-color: #333;
+}
+
+/* Navbar links */
+.topnav a {
+    float: left;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+    background-color: #ddd;
+    color: #000;
+}
+
+/* On sceens that are 600px wide or less, make the menu links stack on top of eack other instead  of next to each other */
+@media screen and (max-width: 600px) {
+    .topnav a {
+        float: none;
+        width: 100%;
+    }
+}
+
